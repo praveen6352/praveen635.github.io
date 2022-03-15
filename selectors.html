@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+	<head>
+		<style>
+			*{
+				background-color:#ADD8E6;
+			}
+			h3{
+				background-color:yellow;
+				color:green;
+			}
+			h1{
+				text-align:center;
+				color:blue;
+			}	
+			.one{
+				border:3px solid red;
+			}
+			#sel2{
+				border:5px blue;
+			}
+			[target]{
+				border:2px blue;
+				color:red;
+			}
+			[id^="or"]{
+				border:2px solid red;
+			}
+			[id*="ss"]{
+				border:5px solid red;
+			}
+			[id$="rs"]{
+				color:blue;
+			}
+			[id="code"]{
+				color:blue;
+			}
+			
+			
+		</style>
+		<title>
+			selectors
+		</title>
+	</head>
+	<body>
+		<h1>core selectors</h1>
+		<h3>
+			<ul>
+				<li class="one" id="sel">global selectors(*)</li>
+				<li class="one" id="sel">tag selectors(tag name)</li>
+				<li class="two" id="sel2">class selectors(.class name)</li>
+				<li class="two" id="sel2">ID selectors(#id name)</li>
+			</ul>
+		</h3>
+		<h1><a href="https://www.w3schools.com/css/css_selectors.asp" target="_blank">Attribute selectors[]</a></h1>
+		<h3>
+			<ul>
+				<li class="three" id="code">has attributes selectors[attributes itself ex:[href]]</li>
+				<li class="three" id="coder">attributes value starts with[ ex:[type^="te"]]</li>
+				<li class="four" id="coders">attributes value ends with[ ex: alt$="ded"]</li>
+				<li class="four" id="coderss">attributes value equal to[ex:[type=text]][</li>
+				<li class="four" id="order">attributes value contains[ex:[type="xt"]]</li>
+			</ul>
+		</h3>
+	</body>
+<html>
