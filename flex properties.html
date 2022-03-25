@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+	<head>
+		<title> flex properties</title>
+		<style>
+		section{
+			display:flex;
+			border:2px solid red;
+			height:500px;
+			width:100%;
+			flex-direction:row;/* another values  column,row-reverse,column-reverse */
+			justify-content: space-around; /* this is for  HARIZONTALLY another values  flex-end,flex-start,center,space-evenly,space-between */
+			align-items:center; /* this is for vertically another values flex-end,flex-start(default value)  */
+			
+		
+		}
+		 #main div{
+			 
+			border:2px solid blue;
+			margin:4px;
+			height:200px;
+			text-align:center;
+		}
+		#item1{
+			align-self:flex-start;
+		}
+		#item2{
+			flex-grow:1;
+		}
+		#item1,#item4{
+			flex-grow:2;
+		}
+		#item1{
+			flex-shrink:3;
+		}
+		#item3{
+			flex-basis:100px;
+			align-self:flex-end;
+		}
+	
+		</style>
+	</head>
+	<body>
+	<section id="main">
+		<div id="item1">1</div>
+		<div id="item2">2</div>
+		<div id="item3">3</div>
+		<div id="item4">4</div>
+		
+	</section>
+	</body>
+	
+</html>

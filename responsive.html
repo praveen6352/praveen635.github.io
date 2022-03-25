@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+	<head>
+	
+		<title>responsive</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			 
+			main{
+				display:grid;
+				
+				padding:6px;	
+				
+			}
+			div{
+				flex:1;
+				margin:8px; 
+			}
+			img{
+				height:100%; 
+				width:100%;
+			}
+			@media screen and (max-width:768px){
+				main{
+					display:flex;
+					flex-direction:column;
+					
+				}				 
+			}
+			
+		</style>
+
+	</head>
+	<body>
+				<main class="main">
+					<div class="div" id="item1"><img src="/images/india flag.webp"/></div>
+					<div class="div" id="item2"><img src="D:\images\japan flag.jpg"/></div>
+					<div class="div" id="item3"><img src="D:\images\srilanka flag.jfif"/></div>
+				</main>
+				
+	</body>
+	
+
+</html>

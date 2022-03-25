@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+	<hesd>
+		<title> transform</title>
+		<style>
+		div{
+			border:2px dotted blue;
+			padding:20px;
+			margin:5px;
+			width:80%;
+		}
+		main div:nth-child(1){
+			transform:translate(100px,500px);
+		}
+		main div:nth-child(2):hover{
+			transform:skew(2deg,3deg);
+		}
+		main div:nth-child(3):hover{
+			transform:scale(1.0,2);
+		}
+		main div:nth-child(4):hover{
+			transform:rotate(10deg);
+		}
+		main div:nth-child(5):hover{
+			transition:width 2s;
+			width:20%;
+		}
+		
+		
+		</style>
+	</head>
+	<body>
+		<main>
+			<div>hyderabad</div>
+			<div>secunderabad</div>
+			<div>kurnool</div>
+			<div>nandyal</div>
+			<div>ap</div>
+		</main>
+	
+	</body>
+
+</html>

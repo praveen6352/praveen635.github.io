@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+	<head>
+		<title>background color</title>
+		<style>
+		main{font-size:40px;}
+		main div:first-child{
+			background-color:rgb(0 128 0/1);
+		}
+		main div:nth-child(2){
+			background-color: hsl(311deg 50% 53%/1);
+		}
+		main div:nth-child(3){
+			background-color:rgb(0 128 0 / 0.60);
+		}
+		main div:nth-child(4){
+			background-color:hsl(311deg 50% 53%/0.60);
+		}
+		main div:nth-child(5){
+			background:linear-gradient(to right,red,yellow,green,blue,orange);
+			padding:20px;
+			margin:20px;
+		}
+		main div:nth-child(6){
+			background: repeating-linear-gradient(to left,red,yellow 10%,green 15%);
+			padding:20px;
+		}
+		main div:nth-child(7){
+			background:linear-gradient(to bottom,red,yellow,green,blue,orange);
+			padding:20px;
+			margin:10px;
+		}
+		main div:nth-child(8){
+			background:linear-gradient(170deg,red,yellow,green,blue,orange);
+			padding:20px;
+			margin:10px;
+		}
+		article{display:flex;font-size:30px;}
+		article div:nth-child(1){
+			background:radial-gradient(red,yellow,green,blue);
+			padding:20px;
+			margin:10px;
+			height:200px;
+			}
+			article div:nth-child(2){
+			background:radial-gradient(red 10%, yellow 10%, green 20%, blue 60%);
+			padding:20px;
+			margin:10px;
+			height:300px;
+			}
+			article div:nth-child(3){
+			background:conic-gradient(red , yellow, green, blue,orange);
+			padding:20px;
+			margin:10px;
+			height:300px;
+			width:300px;
+			border-radius:50%;
+			}
+			article div:nth-child(4){
+			background:conic-gradient(red 0deg, red 90deg, green 90deg, green 180deg, yellow 180deg, yellow 270deg, blue 270deg, blue 30deg);
+			padding:20px;
+			margin:10px;
+			height:300px;
+			width:300px;
+			 
+			}
+		
+		</style>
+	</head>
+	<body>
+	<main>
+	<div>adhra pradesh</div>
+	<div>uttar pradesh</div>
+	<div>madya prsdesh</div>
+	<div>karnataka</div>
+	<div>linear gradient to right</div>
+	<div> repeating linear gradient </div>
+	<div>linear gradient to to bottom</div>
+	<div>linear gradient to angle</div>
+	</main>
+	<article>
+	<div>radial gradient</div>
+	<div>radial gradient percentages</div>
+	<div>conic gradient</div>
+	<div>conic gradient with degrees</div>
+	 
+	 </article>
+	</body>
+</html>

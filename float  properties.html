@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+	<head>
+		<title>
+			float properties
+		</title>
+		<style>
+			section{
+				float:left;
+				border:2px solid red;
+				width:100%;
+			}
+			section div{
+				float:left;
+				width:25%;
+				border:2px dotted blue;
+				box-sizing:border-box;
+				height:100px;
+
+			}
+			main.float{
+				float:left;
+				border:2px solid red;
+				width:100%;
+				margin:10px;
+			}
+			main.float div{
+				float:left;
+				width:45%;
+				border:4px dashed yellow;
+				box-sizing:border-box;
+				margin:10px;
+				
+			}
+			div.flex1,div.flex2{
+				display:flex;
+				border:2px solid red;
+				margin:10px
+			}
+			.flex1 div,.flex2 div{
+				flex:1;
+				border:4px dashed yellow;
+				margin:10px;
+			}
+			article{
+				float:right;
+				border:2px solid red;
+				width:100%;
+			}
+			article div{
+				float:right;
+				width:20%;
+				border:2px dotted blue;
+				box-sizing:border-box;
+				height:100px;
+				margin:10px;
+			 
+			
+		</style>
+	</head>
+	<body>
+		<section>
+			<div>float</div>
+			<div>grid</div>
+			<div>flex</div>
+			<div>disply</div>
+			
+		</section>
+		<main class="float">
+			<div>1:hello</div>
+			<div>2:world</div>
+			<div>3:hello</div>
+			<div>4:world</div>
+		</main>
+		<main class="flex">
+			<div class="flex1">
+				<div>1:hello</div>
+				<div>2:world</div>
+			</div>
+			<div class="flex2">
+				<div>3:hello</div>
+				<div>4:world</div>
+			</div>
+		</main>
+		<article>
+			<div>1.html</div>
+			<div>2.css</div>
+			<div>3.javascript</div>
+			<div>4.bootstrap</div>
+		
+		</article>
+		
+		
+		
+	</body>
+
+
+</html>

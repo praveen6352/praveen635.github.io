@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+	<head>
+		<title>animation</title>
+		<style>
+		div{
+			border:2px solid red;
+			padding:10px;
+			width:20%;
+			margin:100px;
+			animation-name:rolling;
+			animation-delay:2s;
+			animation-duration:2s;
+			animation-iteration-count:5;
+		}
+		@keyframes rolling{
+		0%{transform:rotate(0deg);}
+		100%{transform:rotate(360deg); background-color:blue;}
+		}
+		
+		
+		</style>
+	</head>
+	<body>
+		<div>hello</div>
+	</body>
+</html>

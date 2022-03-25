@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+	<hesd>
+		<title> transition</title>
+		<style>
+		div{
+			border:2px dotted blue;
+			padding:20px;
+			margin:5px;
+			height:50px;
+			width:200px;
+		}
+		main div:first-child{
+			 transition-property: height,border-style,background-color,border-width,font-size,color,width;
+			 transition-delay:2s,2s,2s,2s,2s,2s,3s;
+			 transition-duration:5s,5s,5s,5s,5s,5s,5s;
+		}
+		 main div:first-child:hover{
+			height:200px;
+			border-style:solid;
+			background-color:yellow; 
+			border-width:10px;
+			font-size:60px;
+			color:red;
+			width:50%;
+		}
+			
+		
+		
+		
+		</style>
+	</head>
+	<body>
+		<main>
+			<div>hyderabad</div>
+			<div>nandyal</div>
+			<div>andhra</div>
+			<div>up</div>
+			 
+		</main>
+	
+	</body>
+
+</html>

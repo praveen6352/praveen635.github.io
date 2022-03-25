@@ -1,0 +1,55 @@
+ <!doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		<title>responsive2</title>
+		
+		<style>
+			 
+			main{
+				display:grid;
+				grid-template-rows: 300px;
+				grid-template-columns: 25% 25% 25% 25%;
+				 
+				
+			}
+			 
+			img{
+				height:100%; 
+				width:100%;
+			}
+			@media screen and (max-width:320px){
+				main{
+					grid-template-columns:100%;
+					grid-template-rows:200px 200px 200px 200px;					
+				}				 
+			}
+			@media screen and (min-width: 768px){
+				main{
+					grid-template-columns:50% 50%;
+					grid-template-rows:200px 200px;					
+				}				 
+			}
+			@media screen and (min-width: 1024px){
+				main{
+					grid-template-rows: 300px;
+					grid-template-columns: 25% 25% 25% 25%; 				
+				}				 
+			}
+			
+		</style>
+
+	</head>
+	<body>
+				<main class="main">
+					<div class="div" id="item1"><img src="/images/india flag.webp"/></div>
+					<div class="div" id="item2"><img src="D:\images\japan flag.jpg"/></div>
+					<div class="div" id="item3"><img src="D:\images\srilanka flag.jfif"/></div>
+					<div class="div" id="item1"><img src="/images/india flag.webp"/></div>
+				</main>
+				
+	</body>
+	
+
+</html>

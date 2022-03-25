@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+	<head>
+		<title>nithin task</title>
+		<style>
+			section{
+				display:grid;
+				border:3px solid blue;
+				grid-template-columns: 20% 80% ;
+				grid-template-rows:  auto auto auto auto;
+				grid-template-areas: "header header"
+									 "nav main"
+									 "nav article"
+									 "nav aside";
+			}
+			#item1{
+				grid-area:header;
+				border:2px dotted red;
+				display:grid;
+				grid-template-columns:50% 12.5% 12.5% 12.5% 12.5%;
+				grid-template-rows:70px;
+			}
+			#item2{
+				grid-area:nav;
+				border:2px dotted red;
+				display:grid;
+				grid-template-rows:150px 150px 150px;
+				grid-template-columns: 80%;
+			}
+			#item3{
+				grid-area:main;
+				border:2px dotted red;
+				display:grid;
+				grid-template-columns:20% 60% 20%;
+				grid-template-rows:250px;
+				
+			}
+			#item4{
+				grid-area:article;
+				border:2px dotted red;
+				display:grid;
+				grid-template-columns:20% 60% 20%;
+				grid-template-rows:250px;
+			}
+			#item5{
+				grid-area:aside;
+				border:2px dotted red;
+				display:grid;
+				grid-template-columns:20% 60% 20%;
+				grid-template-rows:250px;
+			}
+			#item11{font-size:25px}
+			#item12{background-color:mediumseagreen; color:white; font-size:25px;}
+			#item13,#item14,#item15{background-color:black; color:white; font-size:25px;}
+			#image1{height:100%; width:100%;}
+			#image2{height:100%; width:100px; align:center;}
+			#item21,#item22,#item23{border:2px solid black; margin:10px;}
+			video{height:100%; width:100%;}
+			audio{height:100%; width:100%;}
+	</style>
+	</head>
+	<body>
+		<section class="gcontainer">
+			<header id="item1">
+				<div id="item11"><img id="image1" src="https://qph.fs.quoracdn.net/main-qimg-512e062fb9c05306546597abeac3586f.webp"></div>
+				<div id="item12">Home</div>
+				<div id="item13">News</div>
+				<div id="item14">contact</div>
+				<div id="item15">About</div>
+			</header>
+			<nav id="item2">
+				<div id="item21">
+					<label>choose one</label><br>
+					<input type="radio" name="type" id="html">html<br/>
+					<input type="radio" name="type" id="css">css<br/>
+					<input type="radio" name="type" id="javascript">javascript<br/>
+				</div>
+				<div id="item22">
+					<label>rate in between</label><br>
+					<input type="checkbox" name="type" id="html">0-30<br/>
+					<input type="checkbox" name="type" id="css">30-60<br/>
+					<input type="checkbox" name="type" id="javascript">60-100<br/>
+				</div>
+				<div id="item23">
+					<p>some list</p>
+					<ul>
+						<li>node js</li>
+						<li>angular</li>
+						<li>data base</li>
+					</ul>
+				</div>
+			</nav>
+			<main id="item3">
+				<div><img id="image2" src="https://rukminim1.flixcart.com/image/416/416/kn22m4w0/mobile/a/q/8/galaxy-f12-sm-f127gzgiins-samsung-original-imagftmjw3xqg4yk.jpeg?q=70"></div>
+				<div>
+					<h3>SAMSUNG Galaxy F12 (Sea Green, 64 GB)  (4 GB RAM)</h3>
+					 <div>
+						<ul>
+							<li>4 GB RAM | 64 GB ROM | Expandable Upto 512 GB</li>
+							<li>16.55 cm (6.515 inch) HD+ Display</li>
+							<li>48MP + 5MP + 2MP + 2MP | 8MP Front Camera</li>
+							<li>6000 mAh Lithium-ion Battery</li>
+							<li>Exynos 850 Processor</li>
+							<li>7 Days Replacement Policy</li>
+						</ul>
+					 </div>
+				</div>
+				<div><h3>₹12000</h3><p><del>₹15000</del></p></div>
+			</main>
+			<article id="item4">
+				<div>
+					<video controls>
+						<source src="../sample-mp4-file.mp4" type="video/mp4"/>
+					</video>
+				</div>
+				<div>
+					 <div>
+						<ul>
+							<li>4 GB RAM | 64 GB ROM | Expandable Upto 512 GB</li>
+							<li>16.55 cm (6.515 inch) HD+ Display</li>
+							<li>48MP + 5MP + 2MP + 2MP | 8MP Front Camera</li>
+							<li>6000 mAh Lithium-ion Battery</li>
+							<li>Exynos 850 Processor</li>
+							<li>7 Days Replacement Policy</li>
+						</ul>
+					 </div>
+				</div>
+				<div><h3>₹12000</h3><p><del>₹15000</del></p></div>
+			</article>
+			<aside id="item5">
+				<div>
+					<audio controls autoplay>
+						<source src="../SAMPLE MP3 FILE.mp3" type="audio/mp3">
+					</audio>>
+				</div>
+				<div>
+					 <div>
+						<ul>
+							<li>4 GB RAM | 64 GB ROM | Expandable Upto 512 GB</li>
+							<li>16.55 cm (6.515 inch) HD+ Display</li>
+							<li>48MP + 5MP + 2MP + 2MP | 8MP Front Camera</li>
+							<li>6000 mAh Lithium-ion Battery</li>
+							<li>Exynos 850 Processor</li>
+							<li>7 Days Replacement Policy</li>
+						</ul>
+					 </div>
+				</div>
+				<div><h3>₹12000</h3><p><del>₹15000</del></p></div>
+			</aside>
+		</section>
+	
+	</body>
+</html>
