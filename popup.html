@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pop up</title>
+</head>
+<body>
+    <p>Click the button to display a confirm box.</p>
+
+    <button onclick="myFunction()">Try it</button>
+    <script>
+        //alert
+        let a=true;
+        if(a==true){
+            alert('it is true value')
+        }
+        else{
+            alert('it is false')
+        }
+        //prompt
+        let anynumber = prompt('enter any nuber');
+        console.log(typeof anynumber);
+        let final = parseInt(anynumber);
+        console.log(typeof final);
+        //confirm
+        let c = confirm('are you really delate it!');
+        function myFunction() {
+        confirm("Press a button!");
+        }
+        console.log(typeof c);
+    </script>
+</body>
+</html>
